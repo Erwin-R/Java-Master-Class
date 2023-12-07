@@ -9,7 +9,7 @@ public class Main {
         System.out.println(numberOne * numberTwo);
         System.out.println(numberOne / numberTwo);
         System.out.println(numberOne % numberTwo);
-        System.out.println((2+2) * (3/1) * 2);
+        System.out.println((2+2) * 3 * 2);
         /*
         BODMAS
         B - Brackets
