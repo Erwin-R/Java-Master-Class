@@ -1,6 +1,7 @@
 package com.potatochip;
 
 import java.awt.*;
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -70,7 +71,7 @@ public class Main {
 //    }
 
         //Pass by value with Reference/Objects
-        //Changes both x and y coordinates of both points since both reference the same object
+//        Changes both x and y coordinates of both points since both reference the same object
         Point pointA = new Point(10,10);
         Point pointB = pointA;
 
@@ -84,5 +85,25 @@ public class Main {
         pointB.y = 55;
         System.out.println(pointA);
         System.out.println(pointB);
+
+
+        //Arrays
+        //Default value of primitives is 0
+        int[] numbers = new int[3];
+        Arrays.fill(numbers, -1); //make default value of array with whatever value you give it
+        numbers[0] = 1;
+        numbers[1] = 33;
+        numbers[2] = 6;
+        System.out.println(Arrays.toString(numbers)); //prints contents inside of string
+        System.out.println(numbers); //prints array object
+        System.out.println(numbers.length);
+
+        int[] numbers2 = {0,5,6,8,9}; //shorthand version of lines above^
+        System.out.println(numbers2.length);
+
+        //Default value of objects is null
+        String[] names = new String[3];
+        names[1] = "Jamila";
+        System.out.println(Arrays.toString(names));
     }
 }
