@@ -89,21 +89,51 @@ public class Main {
 
         //Arrays
         //Default value of primitives is 0
-        int[] numbers = new int[3];
-        Arrays.fill(numbers, -1); //make default value of array with whatever value you give it
-        numbers[0] = 1;
-        numbers[1] = 33;
-        numbers[2] = 6;
-        System.out.println(Arrays.toString(numbers)); //prints contents inside of string
-        System.out.println(numbers); //prints array object
-        System.out.println(numbers.length);
+//        int[] numbers = new int[3];
+//        Arrays.fill(numbers, -1); //make default value of array with whatever value you give it
+//        numbers[0] = 1;
+//        numbers[1] = 33;
+//        numbers[2] = 6;
+//        System.out.println(Arrays.toString(numbers)); //prints contents inside of string
+//        System.out.println(numbers); //prints array object
+//        System.out.println(numbers.length);
+//
+//        int[] numbers2 = {0,5,6,8,9}; //shorthand version of lines above^
+//        System.out.println(numbers2.length);
+//
+//        //Default value of objects is null
+//        String[] names = new String[3];
+//        names[1] = "Jamila";
+//        System.out.println(Arrays.toString(names));
 
-        int[] numbers2 = {0,5,6,8,9}; //shorthand version of lines above^
-        System.out.println(numbers2.length);
+        //Loops
+        for(int i = 0; i <= 10; i++){
+            System.out.println("Hello " + i);
+        }
 
-        //Default value of objects is null
-        String[] names = new String[3];
-        names[1] = "Jamila";
-        System.out.println(Arrays.toString(names));
+        //Loops and Arrays
+        String[] names = {"James", "Nadia", "Sophia", "Alex", "Saleh"};
+
+        //Regular For Loop
+        //Use this type of for loop if you need access to a particular index
+        System.out.println("For i Loop");
+        for(int i = 0; i < names.length; i++){
+            System.out.println(names[i]);
+        }
+
+        //Enhanced For Loop
+        //This type of for loop does not give access to particular index
+        System.out.println("Enhanced For Loop");
+        for(String name : names){
+            System.out.println(name);
+        }
+
+        //While Loop (needs an exit condition to stop looping)
+        int i = 0;
+        boolean keepLooping = true;
+        //use do when you want to execute code at least once regardless of condition
+        do{
+            System.out.println("Hello" + i++);
+        } while (keepLooping);
     }
 }
