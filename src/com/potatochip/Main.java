@@ -130,10 +130,38 @@ public class Main {
 
         //While Loop (needs an exit condition to stop looping)
         int i = 0;
-        boolean keepLooping = true;
+        boolean keepLooping = false;
         //use do when you want to execute code at least once regardless of condition
         do{
             System.out.println("Hello" + i++);
         } while (keepLooping);
+
+        //"If" statements
+        //Switch
+        char grade = 'B';
+//        if(grade == 'A'){
+//            System.out.println("Excellent");
+//        } else if (grade == 'B' || grade == 'C'){
+//            System.out.println("Pass");
+//        } else{
+//            System.out.println("Fail");
+//        }
+
+        //have to add break after each case or else it will go through all cases
+        //Available data types for switch: byte, short, int, char, enums, String
+        //Wrapper classes for switches: Byte ,Short Integer, Character
+        switch (grade){
+            case 'A':
+                System.out.println("Excellent");
+                break;
+            case 'B': //these two lines is how you do OR(||) in switch cases
+            case 'C':
+                System.out.println("Pass");
+                break;
+            default:
+                System.out.println("Fail");
+
+        }
+
     }
 }
