@@ -135,6 +135,60 @@ public class Compile {
         }
 
         //Boolean
+        String myString = new String("Hello");
+        String myString2 = new String("Hello");
+        // using equals() makes the two objects equal.
+        // if just "==" then it will say they are not equal
+        if(myString.equals(myString2)){
+            System.out.println("These strings are equal");
+        } else{
+            System.out.println("They are not equal");
+        }
 
+        int numberOne = 10;
+        int numberTwo = 20;
+        int numberThree = 30;
+
+        if(numberTwo > numberOne || numberTwo < numberThree){
+            System.out.println("Number is in between");
+        } else{
+            System.out.println("NUmber is not in between");
+        }
+
+        String string1 = "hello";
+        char character = 'D';
+        char specifiedChar = Character.toLowerCase(character);
+        boolean characterFound = false;
+        for(int i = 0; i < string1.length(); i++) {
+            //Makes it case insensitive when converting before comparison
+            char string1Char = Character.toLowerCase(string1.charAt(i));
+
+            if (string1Char == specifiedChar) {
+                characterFound = true;
+                break;
+            }
+        }
+
+        if(characterFound){
+            System.out.println("Found specific character");
+        } else{
+            System.out.println("Did not find character");
+        }
+
+
+        for(int i = 0; i < 21; i+= 2){
+            if(i % 2 == 0){
+                System.out.println(i);
+            }
+        }
+
+        String stringVar = "hello";
+
+        for(int i = stringVar.length() -1; i >= 0; i--){
+            System.out.println(stringVar);
+        }
+
+        String amigos = "   amig os cod e  ";
+        
     }
 }

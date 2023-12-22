@@ -1,5 +1,7 @@
 package com.potatochip;
 
+import com.potatochip.email.EmailValidator;
+
 import java.awt.*;
 import java.util.Arrays;
 
@@ -162,6 +164,13 @@ public class Main {
                 System.out.println("Fail");
 
         }
+
+
+        String email1 = "hello@gmail.com";
+        String email2 = "hello";
+        EmailValidator isValidEmail = new EmailValidator();
+        System.out.println(isValidEmail.validEmail(email1));
+        System.out.println(isValidEmail.validEmail(email2));
 
     }
 }
