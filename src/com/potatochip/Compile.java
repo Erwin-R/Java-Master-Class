@@ -189,6 +189,72 @@ public class Compile {
         }
 
         String amigos = "   amig os cod e  ";
-        
+
+        addNumbers(1, 2);
+        oppositeSign(-5);
+        oppositeSign(1);
+        System.out.println(negate(-5));
+        System.out.println(negate(1));
+        System.out.println(equalNumber(1,1));
+        System.out.println(equalNumber(1,2));
+        comparingNum(5,10);
+        System.out.println(capitalizeString("hello world"));
+
+        String[] names = {"Alice", "Walter", "Adam", "Ryan"};
+        System.out.println(arrayLength(names));
+
+        String sentence1 = "Hello, this is a sample sentence.";
+        System.out.println(numOfWords(sentence1));
+
+
     }
+    public static void addNumbers(int n1, int n2){
+        int sum = n1 + n2;
+        System.out.println(sum);
+    }
+
+    public static void oppositeSign(int num){
+        if(num < 0){
+            System.out.println(Math.abs(num));
+        } else{
+            System.out.println(-num);
+        }
+    }
+
+    public static int negate(int num){
+        return -num;
+    }
+
+    public static boolean equalNumber(int n1, int n2){
+        if(n1 == n2){
+            return true;
+        }
+        return false;
+    }
+
+    public static void comparingNum(int n1, int n2){
+        if(n1 == n2){
+            System.out.println("numbers are equal");
+        }else if(n1 > n2){
+            System.out.println(n1 + " is greater than " + n2);
+        } else{
+            System.out.println(n1 + " is less than " + n2);
+        }
+    }
+
+    public static String capitalizeString(String word){
+        String firstLetter = word.substring(0,1).toUpperCase();
+        String secondHalf = word.substring(1);
+        return firstLetter + secondHalf;
+    }
+
+    public static int arrayLength(String[] arr){
+        return arr.length;
+    }
+
+    public static int numOfWords(String sentence){
+        String[] splitSentence = sentence.split(" ");
+        return splitSentence.length;
+    }
+
 }

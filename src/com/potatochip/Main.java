@@ -6,6 +6,13 @@ import java.awt.*;
 import java.util.Arrays;
 
 public class Main {
+
+    private static float rentalYieldCalculator(float rent, float propertyPrice){
+        float annualRent = rent * 12;
+        float rentalYield = (annualRent / propertyPrice) * 100;
+        return rentalYield;
+    }
+
     public static void main(String[] args) {
         /*
         BODMAS
@@ -171,6 +178,8 @@ public class Main {
         EmailValidator isValidEmail = new EmailValidator();
         System.out.println(isValidEmail.validEmail(email1));
         System.out.println(isValidEmail.validEmail(email2));
+
+        System.out.println(rentalYieldCalculator(1300, 250000));
 
     }
 }
