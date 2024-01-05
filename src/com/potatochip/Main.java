@@ -181,5 +181,23 @@ public class Main {
 
         System.out.println(rentalYieldCalculator(1300, 250000));
 
+
+        //Enums
+        //Gives datatype of "Gender"
+        System.out.println(Gender.Male);
+        System.out.println(Gender.Female);
+
+        //Enum methods
+        System.out.println(Arrays.toString(Gender.values()));
+
+        //Gives datatype of "String"
+        System.out.println(GenderConstants.MALE);
+        System.out.println(GenderConstants.FEMALE);
     }
+
+        enum TShirtSize{
+            S,
+            M,
+            L
+        }
 }
