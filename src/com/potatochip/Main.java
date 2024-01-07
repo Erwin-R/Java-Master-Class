@@ -4,6 +4,7 @@ import com.potatochip.email.EmailValidator;
 
 import java.awt.*;
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class Main {
 
@@ -193,11 +194,12 @@ public class Main {
         //Gives datatype of "String"
         System.out.println(GenderConstants.MALE);
         System.out.println(GenderConstants.FEMALE);
+
+        System.out.println("Hello what is your name?");
+        Scanner scanner = new Scanner(System.in);
+        String input = scanner.nextLine();
+        System.out.println("Hello" + input);
     }
 
-        enum TShirtSize{
-            S,
-            M,
-            L
-        }
+
 }
