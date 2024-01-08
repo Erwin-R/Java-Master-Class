@@ -1,5 +1,8 @@
 package com.potatochip;
 
+import java.io.FileWriter;
+import java.io.PrintWriter;
+
 public class ExceptionHandlingExercise {
     public static void main(String[] args) {
         int sum = 0;
@@ -27,7 +30,6 @@ public class ExceptionHandlingExercise {
         }catch (ArithmeticException e){
             System.out.println("Cannot Divide by 0");
         }
-
 
     }
 
