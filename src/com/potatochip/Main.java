@@ -199,6 +199,18 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         System.out.println("Hello" + input);
+
+//        Car car1 = new Car("Toyota", "TRD", 2020);
+//        Car car2 = new Car("Honda", "Accord", 2023);
+//        Car[] cars = {car1, car2};
+//
+//        Dog dog1 = new Dog("Sam", 10, "Brown");
+//        Dog dog2 = new Dog("Princess", 10, "Black");
+//        Dog[] dogs = {dog1, dog2};
+//
+//        Person person1 = new Person("Erwin", "Rosales", cars, dogs);
+//
+//        System.out.println(person1);
     }
 
 
